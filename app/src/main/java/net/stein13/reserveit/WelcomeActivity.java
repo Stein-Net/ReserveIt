@@ -1,9 +1,11 @@
 package net.stein13.reserveit;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class WelcomeActivity extends Activity {
@@ -33,4 +35,6 @@ public class WelcomeActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
