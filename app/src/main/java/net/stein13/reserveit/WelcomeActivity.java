@@ -41,4 +41,11 @@ public class WelcomeActivity extends Activity {
         Intent intent = new Intent(this, newReservation.class);
         startActivity(intent);
     }
+
+
+    public void tellAbout(MenuItem item) {
+        Intent intent = new Intent(this, aboutApp.class);
+        startActivity(intent);
+
+    }
 }

@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="net.stein13.reserveit.newReservation" >
     <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+        android:title="About"
         android:orderInCategory="100"
-        android:showAsAction="never" />
+        android:showAsAction="never"
+        android:onClick="tellAbout"/>
 </menu>

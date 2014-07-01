@@ -1,32 +1,24 @@
 package net.stein13.reserveit;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.transition.Explode;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
-
 import net.stein13.reserveit.R;
 
-public class newReservation extends Activity {
+public class aboutApp extends Activity {
 
-    @TargetApi(Build.VERSION_CODES.L)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_reservation);
-
+        setContentView(R.layout.activity_about_app);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.new_reservation, menu);
+        getMenuInflater().inflate(R.menu.about_app, menu);
         return true;
     }
 
@@ -40,10 +32,5 @@ public class newReservation extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void tellAbout(MenuItem item) {
-        Intent intent = new Intent(this, aboutApp.class);
-        startActivity(intent);
     }
 }

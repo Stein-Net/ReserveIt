@@ -9,5 +9,6 @@
     <string name="viewreserv">View Reservations</string>
     <string name="active">Active?</string>
     <string name="title_activity_new_reservation">New Reservation</string>
+    <string name="title_activity_about_app">About this Application</string>
 
 </resources>
