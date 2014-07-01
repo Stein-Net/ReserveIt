@@ -8,5 +8,6 @@
     <string name="updatereserv">Update Reservation</string>
     <string name="viewreserv">View Reservations</string>
     <string name="active">Active?</string>
+    <string name="title_activity_new_reservation">New Reservation</string>
 
 </resources>
