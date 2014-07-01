@@ -1,9 +1,12 @@
 package net.stein13.reserveit;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 import net.stein13.reserveit.R;
 
 public class aboutApp extends Activity {
@@ -32,5 +35,10 @@ public class aboutApp extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void gotoMain(View view) {
+        Intent intent = new Intent(this, WelcomeActivity.class);
+        startActivity(intent);
     }
 }

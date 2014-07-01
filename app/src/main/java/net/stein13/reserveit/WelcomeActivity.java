@@ -3,9 +3,11 @@ package net.stein13.reserveit;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Explode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 
 public class WelcomeActivity extends Activity {
@@ -14,6 +16,8 @@ public class WelcomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+
     }
 
 
