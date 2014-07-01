@@ -7,7 +7,7 @@ import android.view.MenuItem;
 
 
 public class WelcomeActivity extends Activity {
-
+// Hi Hunter!
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
