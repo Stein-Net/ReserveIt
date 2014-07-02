@@ -24,6 +24,14 @@
             android:name=".aboutApp"
             android:label="@string/title_activity_about_app" >
         </activity>
+        <activity
+            android:name=".createDatabase"
+            android:label="@string/title_activity_create_database"
+            android:parentActivityName=".WelcomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.stein13.reserveit.WelcomeActivity" />
+        </activity>
     </application>
 
 </manifest>

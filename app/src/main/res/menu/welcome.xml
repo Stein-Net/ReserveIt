@@ -6,4 +6,9 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:onClick="tellAbout"/>
+    <item android:id="@+id/action_initilize"
+        android:title="Create Initial Database"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:onClick="createDatabase"/>
 </menu>

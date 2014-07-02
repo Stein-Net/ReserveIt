@@ -11,5 +11,6 @@
     <string name="title_activity_new_reservation">New Reservation</string>
     <string name="title_activity_about_app">Toys</string>
     <string name="main">Back to Main</string>
+    <string name="title_activity_create_database">Creating Database!</string>
 
 </resources>
