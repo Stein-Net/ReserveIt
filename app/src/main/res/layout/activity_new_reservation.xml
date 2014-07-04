@@ -15,7 +15,7 @@
         android:inputType="textPersonName"
         android:hint="Name- Last, First"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/nameText"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
+        android:id="@+id/emailText"
+        android:layout_below="@+id/nameText"
         android:layout_alignParentStart="true"
         android:hint="E-mail" />
 
@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
+        android:id="@+id/phoneNumber"
+        android:layout_below="@+id/emailText"
         android:layout_alignParentStart="true"
         android:hint="Phone Number" />
 
@@ -44,8 +44,8 @@
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:ems="10"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
+        android:id="@+id/addressText"
+        android:layout_below="@+id/phoneNumber"
         android:layout_alignParentStart="true"
         android:hint="Street Address" />
 
@@ -54,9 +54,9 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText5"
-        android:layout_alignTop="@+id/editText4"
-        android:layout_toRightOf="@+id/editText4"
+        android:id="@+id/zipNumber"
+        android:layout_alignTop="@+id/addressText"
+        android:layout_toRightOf="@+id/addressText"
         android:hint="Zip" />
 
     <EditText
@@ -64,8 +64,8 @@
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/editText4"
+        android:id="@+id/arrivalDate"
+        android:layout_below="@+id/addressText"
         android:layout_alignParentStart="true"
         android:hint="Arrival" />
 
@@ -74,33 +74,22 @@
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
-        android:id="@+id/editText7"
-        android:layout_below="@+id/editText6"
+        android:id="@+id/departureDate"
+        android:layout_below="@+id/arrivalDate"
         android:layout_alignParentStart="true"
         android:hint="Departure" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editText8"
-        android:layout_above="@+id/editText7"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/editText4"
-        android:hint="Days" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:id="@+id/editText9"
-        android:layout_below="@+id/editText7"
-        android:layout_alignParentStart="true"
+        android:id="@+id/notesText"
         android:layout_above="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:hint="Notes" />
+        android:hint="Notes"
+        android:layout_alignEnd="@+id/zipNumber"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/departureDate" />
 
     <Button
         android:layout_width="wrap_content"
@@ -108,8 +97,8 @@
         android:text="Create Reservation"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText8"
-        android:onClick="createReservation"/>
+        android:onClick="createReservation"
+        android:layout_alignEnd="@+id/notesText"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
