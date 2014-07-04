@@ -21,7 +21,7 @@ public abstract class SQLHelp extends SQLiteOpenHelper {
         static final String ARRIVAL_COLUMN = "Arrival Date";
         static final String DEPARTURE_COLUMN = "Departure Date";
         static final String NOTES_COLUMN = "Notes Area";
-        static final String COLUMN_ID = "id";
+        static final String ROOM_COLUMN = "Room Number";
 
         public SQLHelp(Context c){
             super(c, DATABASE_NAME, null, 1);
@@ -32,7 +32,7 @@ public abstract class SQLHelp extends SQLiteOpenHelper {
                 + NAME_COLUMN + " TEXT," + EMAIL_COLUMN + " TEXT,"
                 + PHONENUMBER_COLUMN + " INTEGER," + ADDRESS_COLUMN + " TEXT,"
                 + ZIP_COLUMN + " TEXT," + ARRIVAL_COLUMN + " INTEGER,"
-                + DEPARTURE_COLUMN + " INTEGER," + NOTES_COLUMN + " TEXT,"+ ")";
+                + DEPARTURE_COLUMN + " INTEGER," + ROOM_COLUMN + "INTEGER" + NOTES_COLUMN + " TEXT,"+ ")";
         db.execSQL(makeTable);
     }
 

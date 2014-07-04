@@ -21,6 +21,7 @@ public class DBAdapter
     static final String ZIP_COLUMN = "Zip Code";
     static final String ARRIVAL_COLUMN = "Arrival Date";
     static final String DEPARTURE_COLUMN = "Departure Date";
+    static final String ROOM_COLUMN = "Room Number";
     static final String NOTES_COLUMN = "Notes Area";
 
     private static final int DATABASE_VERSION = 1;
@@ -52,7 +53,7 @@ public class DBAdapter
                     + NAME_COLUMN + " TEXT," + EMAIL_COLUMN + " TEXT,"
                     + PHONENUMBER_COLUMN + " INTEGER," + ADDRESS_COLUMN + " TEXT,"
                     + ZIP_COLUMN + " TEXT," + ARRIVAL_COLUMN + " INTEGER,"
-                    + DEPARTURE_COLUMN + " INTEGER," + NOTES_COLUMN + " TEXT,"+ ")";
+                    + DEPARTURE_COLUMN + " INTEGER," + ROOM_COLUMN + "INTEGER" + NOTES_COLUMN + " TEXT,"+ ")";
             db.execSQL(makeTable);
         }
 
@@ -79,7 +80,7 @@ public class DBAdapter
     {
         DBHelper.close();
     }
-    public long insertReservation(String nameValue, String  emailValue, String  phoneValue, String  addressValue, String zipValue, String arrivalValue, String departureValue, String notesValue)
+    public long insertReservation(String nameValue, String  emailValue, String  phoneValue, String  addressValue, String zipValue, String arrivalValue, String departureValue, String notesValue, String roomValue)
     {
         ContentValues initialValues = new ContentValues();
         initialValues.put(NAME_COLUMN, nameValue);
@@ -90,6 +91,7 @@ public class DBAdapter
         initialValues.put(ARRIVAL_COLUMN, arrivalValue);
         initialValues.put(DEPARTURE_COLUMN, departureValue);
         initialValues.put(NOTES_COLUMN, notesValue);
+        initialValues.put(ROOM_COLUMN, roomValue);
 
         return db.insert(TABLE_RESERVATIONS, null, initialValues);
     }

@@ -32,6 +32,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.stein13.reserveit.WelcomeActivity" />
         </activity>
+        <activity
+            android:name=".viewReservaitons"
+            android:label="@string/title_activity_view_reservaitons"
+            android:parentActivityName=".WelcomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.stein13.reserveit.WelcomeActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -68,8 +68,10 @@ public class newReservation extends Activity {
         String departureValue = departureDate.getText().toString();
         EditText notesArea = (EditText)findViewById(R.id.notesText);
         String notesValue = notesArea.getText().toString();
+        EditText roomNum = (EditText)findViewById(R.id.roomNum);
+        String roomValue = roomNum.getText().toString();
 
-        db.insertReservation(nameValue, emailValue, phoneValue, addressValue, zipValue, arrivalValue, departureValue, notesValue);
+        db.insertReservation(nameValue, emailValue, phoneValue, addressValue, zipValue, arrivalValue, departureValue, notesValue, roomValue);
         Toast toast = Toast.makeText(getApplicationContext(), "Creating Reservation", Toast.LENGTH_LONG);
         toast.show();
         db.close();
